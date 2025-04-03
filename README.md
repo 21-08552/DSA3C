@@ -62,3 +62,7 @@ This file contains the code for the Tilt Variation of SeaHawk-1.
 
 This file contains the code for the Shadow Analysis of DSA3C and SeaHawk-1.
 [Shadow Analysis of DSA3C and SeaHawk-1](https://github.com/AEE24-008/DSA3C/blob/main/ShadowModelling)
+
+git add myfolder/
+git commit -m "Added a folder with code files"
+
