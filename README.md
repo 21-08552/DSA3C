@@ -5,18 +5,23 @@ This project aims to design and optimize the solar power generation system of a 
 ## Table of Contents
 1. [DSA3C Power generation](#DSA3CGeneration)
 2. [DSA3C Power Consumption](#DSA3CConsumption)
-3. [DSA3C Generation, Consumption, and Battery](#DSA3CBCG)
+3. [DSA3C Power Generation, Consumption, and Battery](#DSA3CBCG)
 4. [DSA3C Tilt Variation](#TiltVariationDSA3C)
 5. [DSA3C Low-Power Management System](#LowPowerMode)
 6. [SeaHawk-1 Power Generation](#SHGeneration)
 7. [SeaHawk-1 Power Consumption](#SHConsumption)
-8. [SeaHawk-1 Generation, Consumption, and Battery](#SHBCG)
+8. [SeaHawk-1 Power Generation, Consumption, and Battery](#SHBCG)
 
 ## DSA3C Power Generation
 
 This file contains the code for the Power Generation of DSA3C.
-[DSA Power Generation](https://github.com/21-08552/DSA3C/blob/main/DSA3CGeneration.m)
+[DSA Power Generation](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CGeneration.m)
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/username/repository-name.git
+## DSA3C Power Consumption
+
+This file contains the code for the Power Consumption of DSA3C.
+[DSA Power Consumption](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CConsumption.m)
+
+## DSA3C Power Generation, Consumption, and Battery
+This file contains the code for the Power Generation, Consumption, and Battery of DSA3C.
+[DSA Power Generation, Consumption, and Battery](https://github.com/AEE24-008/DSA3C/blob/main/DSA3BCG.m)
