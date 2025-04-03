@@ -47,7 +47,7 @@ This file contains the code for the Power Generation of SeaHawk-1.
 This file contains the code for the Power Consumption of SeaHawk-1.
 [SeaHawk-1 Power Consumption](https://github.com/AEE24-008/DSA3C/blob/main/SHConsumption.m)
 
-## SeaHawk-1 Power Generation
+## SeaHawk-1 Power Generation, Consumption, and Battery
 
 This file contains the code for the Power Generation, Consumption, and Battery of SeaHawk-1.
 [SeaHawk-1 Power Generation, Consumption, and Battery](https://github.com/AEE24-008/DSA3C/blob/main/SHBCG.m)
