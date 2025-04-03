@@ -141,7 +141,6 @@ ylabel('Power (W)');
 title('Power Consumption');
 grid on;
 
-% Display stats neatly in the upper-right corner
 max_body = max(P_consumed);
 min_body = min(P_consumed);
 avg_body = mean(P_consumed);
@@ -156,7 +155,6 @@ ylabel('Power (W)');
 title('Power Generation');
 grid on;
 
-% Display stats neatly in the upper-right corner
 max_deploy_7 = max(P_total);
 min_deploy_7 = min(P_total);
 avg_deploy_7 = mean(P_total);
@@ -171,7 +169,6 @@ ylabel('Battery Energy (Wh)');
 title('Battery State of Charge');
 grid on;
 
-% Display stats neatly in the upper-right corner
 max_deploy_4 = max(battery_energy);
 min_deploy_4 = min(battery_energy);
 avg_deploy_4 = mean(battery_energy);
