@@ -12,9 +12,10 @@ This project aims to design and optimize the solar power generation system of a 
 7. [SeaHawk-1 Power Consumption](#SHConsumption)
 8. [SeaHawk-1 Generation, Consumption, and Battery](#SHBCG)
 
-## Installation
+## DSA3C Power Generation
 
-To get started with the CubeSat Solar Power Optimization project:
+This file contains the code for the Power Generation of DSA3C.
+[DSA Power Generation](https://github.com/21-08552/DSA3C/blob/main/DSA3CGeneration.m)
 
 1. Clone the repository to your local machine:
    ```bash
