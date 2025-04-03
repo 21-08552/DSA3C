@@ -15,13 +15,23 @@ This project aims to design a deployable solar array for 3U CubeSat for space mi
 ## DSA3C Power Generation
 
 This file contains the code for the Power Generation of DSA3C.
-[DSA Power Generation](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CGeneration.m)
+[DSA3C Power Generation](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CGeneration.m)
 
 ## DSA3C Power Consumption
 
 This file contains the code for the Power Consumption of DSA3C.
-[DSA Power Consumption](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CConsumption.m)
+[DSA3C Power Consumption](https://github.com/AEE24-008/DSA3C/blob/main/DSA3CConsumption.m)
 
 ## DSA3C Power Generation, Consumption, and Battery
 This file contains the code for the Power Generation, Consumption, and Battery of DSA3C.
-[DSA Power Generation, Consumption, and Battery](https://github.com/AEE24-008/DSA3C/blob/main/DSA3BCG.m)
+[DSA3C Power Generation, Consumption, and Battery](https://github.com/AEE24-008/DSA3C/blob/main/DSA3BCG.m)
+
+## DSA3C Tilt Variation
+
+This file contains the code for the Tilt Variation of DSA3C.
+[DSA3C Tilt Variation](https://github.com/AEE24-008/DSA3C/blob/main/TiltVariationDSA3C.m)
+
+## DSA3C Low-Power Management System
+
+This file contains the code for the Low-Power Management System of DSA3C.
+[DSA Low-Power Management System](https://github.com/AEE24-008/DSA3C/blob/main/LowPowerMode.m)
