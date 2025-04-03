@@ -12,6 +12,7 @@ This project aims to design a deployable solar array for 3U CubeSat for space mi
 7. [SeaHawk-1 Power Consumption](#SHConsumption)
 8. [SeaHawk-1 Power Generation, Consumption, and Battery](#SHBCG)
 9. [SeaHawk-1 Tilt Variation](#TiltVariationSH)
+10. [Shadow Analysis of DSA3C and SeaHawk-1](#ShadowingModel)
 
 ## DSA3C Power Generation
 
@@ -56,3 +57,8 @@ This file contains the code for the Power Generation, Consumption, and Battery o
 
 This file contains the code for the Tilt Variation of SeaHawk-1.
 [SeaHawk-1 Tilt Variation](https://github.com/AEE24-008/DSA3C/blob/main/TiltVariationSH-1.m)
+
+## Shadow Analysis of DSA3C and SeaHawk-1
+
+This file contains the code for the Shadow Analysis of DSA3C and SeaHawk-1.
+[Shadow Analysis of DSA3C and SeaHawk-1](https://github.com/AEE24-008/DSA3C/blob/main/ShadowModelling)
