@@ -1,0 +1,64 @@
+
+import bpy
+import math
+import mathutils
+import bmesh
+
+def get_selected_object():
+    selected_objects = bpy.context.selected_objects
+    if not selected_objects:
+        raise ValueError("No object selected. Please select the CubeSat and try again.")
+    return selected_objects[0]
+
+def find_sun():
+    for obj in bpy.data.objects:
+        if obj.type == 'MESH' and obj.active_material:
+            for node in obj.active_material.node_tree.nodes:
+                if node.type == 'EMISSION':
+                    return obj
+    raise ValueError("No emissive Sun object found. Add a UV Sphere with an Emission shader.")
+
+def get_cubesat_transform(obj):
+    return obj.location, math.degrees(obj.matrix_world.to_euler().x)
+
+def analyze_illumination(obj, light, min_efficiency=0.3):
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    obj_eval = obj.evaluated_get(depsgraph)
+    mesh = obj_eval.to_mesh()
+    bm = bmesh.new()
+    bm.from_mesh(mesh)
+    bm.transform(obj_eval.matrix_world)
+    
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    
+    light_dir = (light.location - obj_eval.location).normalized()
+    efficient_area = 0  
+    shadowed_area = 0   
+    
+    for face in bm.faces:
+        face_normal = face.normal.normalized()
+        face_area = face.calc_area()
+        illumination_factor = max(0, face_normal.dot(light_dir))
+        
+        if illumination_factor >= min_efficiency:
+            efficient_area += face_area
+        else:
+            shadowed_area += face_area
+    
+    bm.free()
+    obj_eval.to_mesh_clear()
+    total_area = efficient_area + shadowed_area or 1
+    return efficient_area, shadowed_area, (efficient_area / total_area) * 100, (shadowed_area / total_area) * 100
+
+try:
+    cubesat = get_selected_object()
+    sun = find_sun()
+    location, x_rotation = get_cubesat_transform(cubesat)
+    illum_area, shadow_area, illum_percent, shadow_percent = analyze_illumination(cubesat, sun)
+    
+    print(f"CubeSat: {cubesat.name}")
+    print(f"Location: {location}, Rotation X: {x_rotation:.2f}°")
+    print(f"Efficiently Illuminated: {illum_area:.2f} m² ({illum_percent:.1f}%)")
+    print(f"Shadowed: {shadow_area:.2f} m² ({shadow_percent:.1f}%)")
+except ValueError as e:
+    print(f"Error: {e}")
