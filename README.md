@@ -1,6 +1,6 @@
 # CubeSat Solar Power Optimization
 
-This project aims to design and optimize the solar power generation system of a CubeSat for space missions. The goal is to improve energy efficiency by refining solar panel deployment strategies and enhancing power management algorithms.
+This project aims to design a deployable solar array for 3U CubeSat for space missions. The goal is to improve energy efficiency by refining solar panel deployment strategies and enhancing power management algorithms.
 
 ## Table of Contents
 1. [DSA3C Power generation](#DSA3CGeneration)
